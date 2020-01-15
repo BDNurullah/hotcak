@@ -22,4 +22,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 //Admin
+//Home slider route
 Route::resource('/admin/homesliders','HomeslidersController');//Home slider route
+Route::get('/admin/homesliders', 'HomeslidersController@index')->name('homesliders');
+//Product route
+Route::resource('/admin/products','ProductController');
+Route::get('/admin/products', 'ProductController@index')->name('products');

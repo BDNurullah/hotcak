@@ -30,7 +30,17 @@
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
-            <li class="treeview">
+            <li>
+                <a href="{{ route('homesliders') }}">
+                    <i class="fa fa-dashboard"></i> <span>Home Slider</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('products') }}">
+                    <i class="fa fa-dashboard"></i> <span>Product</span>
+                </a>
+            </li>
+<!--            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-edit"></i> <span>Forms</span>
                     <span class="pull-right-container">
@@ -42,7 +52,7 @@
                     <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
                     <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
                 </ul>
-            </li>
+            </li>-->
         </ul>
     </section>
     <!-- /.sidebar -->
