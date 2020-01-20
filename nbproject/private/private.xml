@@ -3,19 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/blog/resources/views/includes/admin_sidebar.blade.php</file>
-            <file>file:/C:/wamp64/www/blog/resources/views/admin/products/create.blade.php</file>
-            <file>file:/C:/wamp64/www/blog/resources/views/admin/products/index.blade.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/HomeslidersController.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Homeslider.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/HomeController.php</file>
-            <file>file:/C:/wamp64/www/blog/resources/views/admin/homesliders/index.blade.php</file>
             <file>file:/C:/wamp64/www/blog/routes/web.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/Auth/LoginController.php</file>
-            <file>file:/C:/wamp64/www/blog/resources/views/layouts/admin.blade.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/ProductController.php</file>
-            <file>file:/C:/wamp64/www/blog/resources/views/admin/homesliders/create.blade.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Product.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/admin/products/index.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/app/ProductType.php</file>
+            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/ProductTypeController.php</file>
+            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/HomeslidersController.php</file>
         </group>
     </open-files>
 </project-private>

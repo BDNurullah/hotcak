@@ -28,3 +28,6 @@ Route::get('/admin/homesliders', 'HomeslidersController@index')->name('homeslide
 //Product route
 Route::resource('/admin/products','ProductController');
 Route::get('/admin/products', 'ProductController@index')->name('products');
+//Product route
+Route::resource('/admin/productType','ProductTypeController');
+Route::get('/admin/productType', 'ProductTypeController@index')->name('productType');

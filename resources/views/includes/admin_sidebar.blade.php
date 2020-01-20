@@ -36,6 +36,11 @@
                 </a>
             </li>
             <li>
+                <a href="{{ route('productType') }}">
+                    <i class="fa fa-dashboard"></i> <span>Product Type</span>
+                </a>
+            </li>
+            <li>
                 <a href="{{ route('products') }}">
                     <i class="fa fa-dashboard"></i> <span>Product</span>
                 </a>
