@@ -15,8 +15,10 @@
 //    return view('website.welcome');
 //});
 Route::get('/', 'SiteController@index')->name('index');
-Route::get('/order', 'SiteController@order')->name('order');
+Route::get('/shop', 'SiteController@shop')->name('shop');
 Route::get('/details', 'SiteController@details')->name('details');
+Route::get('/cart', 'SiteController@cart')->name('cart');
+Route::get('/order', 'SiteController@order')->name('order');
 
 Auth::routes();
 

@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/wamp64/www/blog/resources/views/portal/home.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/includes/portal_header.blade.php</file>
             <file>file:/C:/wamp64/www/blog/routes/web.php</file>
-            <file>file:/C:/wamp64/www/blog/resources/views/admin/products/index.blade.php</file>
-            <file>file:/C:/wamp64/www/blog/app/ProductType.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/ProductTypeController.php</file>
-            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/HomeslidersController.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/layouts/portal.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/includes/portal_footer.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/app/Http/Controllers/SiteController.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/portal/shop.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/portal/cart.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/portal/order.blade.php</file>
+            <file>file:/C:/wamp64/www/blog/resources/views/portal/details.blade.php</file>
         </group>
     </open-files>
 </project-private>
