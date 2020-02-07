@@ -6,40 +6,48 @@
     <div class="container-fluid">
 
         <div class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-5">
                 <div class="single_product_thumb">
                     <div id="product_details_slider" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-image: url({{ asset('uploads/product/main/HC-001.png')}});">
-                            </li>
-                            <li data-target="#product_details_slider" data-slide-to="1" style="background-image: url({{ asset('uploads/product/sub/HC-001_1.jpeg')}});">
-                            </li>
-                            <li data-target="#product_details_slider" data-slide-to="2" style="background-image: url({{ asset('uploads/product/sub/HC-001_2.jpeg')}});">
-                            </li>
-                            <li data-target="#product_details_slider" data-slide-to="3" style="background-image: url({{ asset('uploads/product/sub/HC-001_3.jpeg')}});">
-                            </li>
+                            <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-image: url({{ asset('uploads/product/main/'.$products->ImageUrl)}});"></li>
+                            @if($products->SubImageUrl1 !='')
+                            <li data-target="#product_details_slider" data-slide-to="1" style="background-image: url({{ asset('uploads/product/sub/'.$products->SubImageUrl1)}});"></li>
+                            @endif
+                            @if($products->SubImageUrl2 !='')
+                            <li data-target="#product_details_slider" data-slide-to="2" style="background-image: url({{ asset('uploads/product/sub/'.$products->SubImageUrl2)}});"></li>
+                            @endif
+                            @if($products->SubImageUrl3 !='')
+                            <li data-target="#product_details_slider" data-slide-to="3" style="background-image: url({{ asset('uploads/product/sub/'.$products->SubImageUrl3)}});"></li>
+                            @endif
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a class="gallery_img" href="{{ asset('uploads/product/main/HC-001.png')}}">
-                                    <img class="d-block w-100" src="{{ asset('uploads/product/main/HC-001.png')}}" alt="First slide">
+                                <a class="gallery_img" href="{{ asset('uploads/product/main/'.$products->ImageUrl)}}">
+                                    <img style="height: 300px; width: 200px;" class="d-block w-100" src="{{ asset('uploads/product/main/'.$products->ImageUrl)}}" alt="First slide">
                                 </a>
                             </div>
+                            @if($products->SubImageUrl1 !='')
                             <div class="carousel-item">
-                                <a class="gallery_img" href="{{ asset('uploads/product/sub/HC-001_1.jpeg')}}">
-                                    <img class="d-block w-100" src="{{ asset('uploads/product/sub/HC-001_1.jpeg')}}" alt="Second slide">
+                                <a class="gallery_img" href="{{ asset('uploads/product/sub/'.$products->SubImageUrl1)}}">
+                                    <img style="height: 300px; width: 200px;" class="d-block w-100" src="{{ asset('uploads/product/sub/'.$products->SubImageUrl1)}}" alt="Second slide">
                                 </a>
                             </div>
+                            @endif
+                            @if($products->SubImageUrl2 !='')
                             <div class="carousel-item">
-                                <a class="gallery_img" href="{{ asset('uploads/product/sub/HC-001_2.jpeg')}}">
-                                    <img class="d-block w-100" src="{{ asset('uploads/product/sub/HC-001_2.jpeg')}}" alt="Third slide">
+                                <a class="gallery_img" href="{{ asset('uploads/product/sub/'.$products->SubImageUrl2)}}">
+                                    <img style="height: 300px; width: 200px;" class="d-block w-100" src="{{ asset('uploads/product/sub/'.$products->SubImageUrl2)}}" alt="Third slide">
                                 </a>
                             </div>
+                            @endif
+                            @if($products->SubImageUrl3 !='')
                             <div class="carousel-item">
-                                <a class="gallery_img" href="{{ asset('uploads/product/sub/HC-001_3.jpeg')}}">
-                                    <img class="d-block w-100" src="{{ asset('uploads/product/sub/HC-001_3.jpeg')}}" alt="Fourth slide">
+                                <a class="gallery_img" href="{{ asset('uploads/product/sub/'.$products->SubImageUrl3)}}">
+                                    <img style="height: 300px; width: 200px;" class="d-block w-100" src="{{ asset('uploads/product/sub/'.$products->SubImageUrl3)}}" alt="Fourth slide">
                                 </a>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -58,18 +66,18 @@
                         পণ্য ডেলিভারীর সময় সঠিক পণ্য দেখে-বুঝে নেওয়ার জন্য বিশেষভাবে অনুরোধ করা হচ্ছে।
                         নষ্ট বা ক্ষতিগ্রস্ত পণ্য গ্রহন না করে পণ্যবাহকের কাছে পণ্য ফেরত দেবার জন্য বলা হচ্ছে।
                         আপনাদের সুখী জীবনই আমাদের কাম্য।
-                        টি.ভি.সি স্কাই শপ পরিবারের সাথে থাকার জন্য আপনাকে অসংখ্য ধন্যবাদ জানানো হচ্ছে।
+                        হট  কেক পরিবারের সাথে থাকার জন্য আপনাকে অসংখ্য ধন্যবাদ জানানো হচ্ছে।
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-7">
                 <div class="single_product_desc">
                     <!-- Product Meta Data -->
                     <div class="product-meta-data">
                         <div class="line"></div>
-                        <p class="product-price">4800 TK</p>
+                        <p class="product-price">৳ {{ $products->Price}}</p>
                         <a href="#">
-                            <h6>FLESHLIGHT FOR MEN</h6>
+                            <h6 style="text-transform: uppercase;">{{ $products->Name}}</h6>
                         </a>
                         <!-- Ratings & Review -->
                         <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
@@ -84,33 +92,17 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <!-- Avaiable -->
                     </div>
 
-                    <div class="short_overview my-5">
-                        <h6>Product Description</h6>
-                        <p>Flesh Light Now in Bangladesh FOR YOUR BED ENJOY . 12 FUNCTION WITH SEX  YOUR ENJOY NOW ON YOUR HAND REMOTE .
-                            <br/>  Only Original Products Brought To You By HOTCAK.COM
-                            <br/>  Hot Sales Real Skin Feeling Pussy male masturbator artificial pussy vibrator for man
-                            <br/>  Name: masturbator cup
-                            <br/>  Material: 100% silicon
-                            <br/>  Size: 300*120mm Weight: 750g
-                            <br/>  Color: flesh Type: male masturbator
-                            <br/>  Waterproof: Yes
-                            <br/>  Vibration: Yes Certification: SGS USA
-                            <br/>  Notes: Wash before and after use
-                            <br/>  Material: All the raw material is according the rule of International Healthy Standard.
-                            <br/>  Function: Improve the sexual goal via the  function of Massage and vibrate the sensitive part
-                            <br/>  Packing: gift box
-                            <br/>  Quality control: From raw materials to finished products, every process is tested and controlled,professionally and seriously by our
-                            <br/>  professional machines and person.
-                        </p>
+                    <div class="">
+                        <h5>Product Description</h5>
+                        {!! $products->Description !!}
                     </div>
-                    <!-- Add to Cart Form -->
-                        <button><a class="btn amado-btn" href="{{route('cart')}}">Add to cart</a></button>
-<!--                    <form class="cart clearfix" method="post">
-                        <button type="submit" name="addtocart" value="5" class="btn amado-btn">Add to cart</button>
-                    </form>-->
+                    <h3>৳ {{ $products->Price}}
+                        <button>
+                            <a class="btn amado-btn" href="{{route('cart',$products->ProductID)}}">Order Now</a>
+                        </button>
+                    </h3>
                 </div>
             </div>
         </div>

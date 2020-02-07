@@ -46,7 +46,7 @@
                 </div>
                 <span style="text-align: center;">
                     <button type="button" class="btn btn-info btn-xs" title="Order by a Phone Call" style="padding: 0px;">Order: 01313597212</button>
-                   
+
                     <button type="button" class="btn btn-warning btn-xs" title="Only for Bkash" style="padding: 0px;">Bkash: 01313597212</button>
                 </span>
                 <!-- Navbar Toggler -->
@@ -62,26 +62,26 @@
             <!-- Header Area End -->
 
             @yield('content')
-                
+
         </div>
         <!-- ##### Main Content Wrapper End ##### -->
 
         <!-- ##### Newsletter Area Start ##### -->
         @include('includes.portal_footer')
         <!-- ##### Footer Area End ##### -->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e3143d4daaca76c6fd0609e/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5e3143d4daaca76c6fd0609e/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
         <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
         <script src="{{ asset('assets/portal/js/jquery/jquery-2.2.4.min.js')}}"></script>
         <!-- Popper js -->
@@ -92,5 +92,6 @@ s0.parentNode.insertBefore(s1,s0);
         <script src="{{ asset('assets/portal/js/plugins.js')}}"></script>
         <!-- Active js -->
         <script src="{{ asset('assets/portal/js/active.js')}}"></script>
+        @yield('javascript')
     </body>
 </html>

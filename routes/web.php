@@ -14,11 +14,17 @@
 //Route::get('/', function () {
 //    return view('website.welcome');
 //});
-Route::get('/', 'SiteController@index')->name('index');
+Route::get('/', 'SiteController@shop')->name('index');
+//Route::get('/', 'SiteController@index')->name('index');
 Route::get('/shop', 'SiteController@shop')->name('shop');
-Route::get('/details', 'SiteController@details')->name('details');
-Route::get('/cart', 'SiteController@cart')->name('cart');
-Route::get('/order', 'SiteController@order')->name('order');
+Route::get('/details/{id}','SiteController@details')->name('details');
+Route::get('/cart/{id}', 'SiteController@cart')->name('cart');
+Route::post('/order', 'SiteController@order')->name('order');
+Route::get('/orderSubmint', 'SiteController@orderSubmint')->name('orderSubmint');
+
+
+// --
+//Route::get('/details', 'SiteController@details')->name('details');
 
 Auth::routes();
 

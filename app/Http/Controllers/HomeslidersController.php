@@ -42,13 +42,15 @@ class HomeslidersController extends Controller
     public function store(Request $request)
     {
          $request->validate([
-            'Title' => 'required|max:255',
+            //'Title' => 'required|max:255',
             'Description' => 'required',
-             'ImageUrl' => 'required|mimes:jpeg,png,jpg',
+             //'ImageUrl' => 'required|mimes:jpeg,png,jpg',
         ]);
 
         if($request->hasFile('ImageUrl')){
             $homeSlideImage = $this->upload($request->ImageUrl, 'home-slider-image');
+        }else{
+            $homeSlideImage = "";
         }
         $data = array([
             'Title' => $request->input('Title'),
