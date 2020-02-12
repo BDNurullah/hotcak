@@ -7,7 +7,7 @@
 <style>
     @media only screen and (max-width: 600px) {
         #productInfo {
-            width: 45%;
+            width: 48%;
         }
     }
 </style>

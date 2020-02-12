@@ -4,13 +4,13 @@
             <img src="{{asset('assets/website/free.png')}}" alt="No Image" style="height: 40px;">
             <div style="vertical-align: middle;">
                 <strong>FREE SHIPPING</strong>
-                <p>On Order Over <br/>৳1000</p>
+                <p>On Order Over <br/>৳ 1000</p>
             </div>
         </div>
         <div class="col-sm-3" style="text-align: center;">
             <img src="{{asset('assets/website/call.png')}}" alt="No Image" style="height: 40px;">
             <div style="vertical-align: middle;">
-                <strong>01313597212</strong>
+                <strong>01313597212 <br> 01893100899</strong>
                 <p>Saturday-Friday,<br/> 8am-10pm</p>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <img src="{{asset('assets/website/payment.png')}}" alt="No Image" style="height: 40px;">
             <div style="vertical-align: middle;">
                 <strong>100% SECURED PAYMENT</strong>
-                <p>Bkash Personal :<br/> 01313597212</p>
+                <p>Bkash Personal :<br/> 01819896750</p>
             </div>
         </div>
         <div class="col-sm-3" style="text-align: center;">

@@ -9,7 +9,7 @@
         <div class="footer-up-box fix">
             <img src="{{asset('assets/website/call.png')}}" alt="#">
             <div class="footer-up-content">
-                <strong>01313597212/01313597212</strong>
+                <strong>01313597212<br>01893100899</strong>
                 <p>Saturday-Friday, 8am-10pm</p>
             </div>
         </div>
@@ -17,7 +17,7 @@
             <img src="{{asset('assets/website/payment.png')}}" alt="#">
             <div class="footer-up-content">
                 <strong>100% SECURED PAYMENT</strong>
-                <p>Bkash Personal : 01313597212/01313597212</p>
+                <p>Bkash Personal : 01819896750</p>
             </div>
         </div>
         <div class="footer-up-box fix">

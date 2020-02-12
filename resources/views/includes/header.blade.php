@@ -25,7 +25,7 @@
                 <img src="{{asset('assets/website/header-animation.gif')}}">
             </div>
             <div id="header_hot_right">
-                <h3 class="hotline" style="font-size:14px;text-align:center;margin-bottom:10px;">Order by a Phone Call:<br/><span style="color:#8A4793"></i>01313597212</br>01313597212</span><br/>Always Open</h3>
+                <h3 class="hotline" style="font-size:14px;text-align:center;margin-bottom:10px;">Order by a Phone Call:<br/><span style="color:#8A4793"></i>01313597212</br>01893100899</span><br/>Always Open</h3>
             </div>
         </div>
     </div>

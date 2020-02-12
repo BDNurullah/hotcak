@@ -47,7 +47,7 @@
                 <span style="text-align: center;">
                     <button type="button" class="btn btn-info btn-xs" title="Order by a Phone Call" style="padding: 0px;">Order: 01313597212</button>
 
-                    <button type="button" class="btn btn-warning btn-xs" title="Only for Bkash" style="padding: 0px;">Bkash: 01313597212</button>
+                    <button type="button" class="btn btn-warning btn-xs" title="Only for Bkash" style="padding: 0px;">Bkash: 01819896750</button>
                 </span>
                 <!-- Navbar Toggler -->
                 <div class="amado-navbar-toggler">

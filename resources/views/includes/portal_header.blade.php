@@ -20,7 +20,7 @@
     <!-- Button Group -->
     <div class="amado-btn-group mt-30 mb-100">
         <a href="#" class="btn btn-info mb-15" title="Order by a Phone Call">Order: 01313597212</a>
-        <a href="#" class="btn btn-warning" title="Only for Bkash">Bkash: 01313597212</a>
+        <a href="#" class="btn btn-warning" title="Only for Bkash">Bkash: 01819896750</a>
     </div>
     <!-- Cart Menu -->
 <!--    <div class="cart-fav-search mb-100">
