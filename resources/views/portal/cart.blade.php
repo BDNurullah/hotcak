@@ -64,7 +64,7 @@
                             <!-- Cash on delivery -->
                             <div class="custom-control custom-checkbox mr-sm-2">
                                 <input type="checkbox" class="custom-control-input" id="cod" checked>
-                                <label class="custom-control-label" for="cod">Cash on Delivery</label>
+                                <label class="custom-control-label" for="cod">Courier Delivery</label>
                             </div>
                             <!-- Paypal -->
                             <div class="custom-control custom-checkbox mr-sm-2">

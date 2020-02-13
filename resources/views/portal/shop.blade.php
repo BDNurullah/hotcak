@@ -7,7 +7,7 @@
 <style>
     @media only screen and (max-width: 600px) {
         #productInfo {
-            width: 48%;
+            width: 46%;
         }
     }
 </style>
@@ -22,7 +22,9 @@
                         <div class="product-img">
                             <img src="{{ asset('uploads/product/main/'.$value->ImageUrl)}}" alt="No Image" style="height: 200px; width: 210px; margin-left: auto; margin-right: auto;">
                             <!-- Hover Thumb -->
+                            <a href="{{ route('details',$value->ProductID) }}" data-toggle="tooltip" data-placement="left" title="For Order">
                             <img class="hover-img" src="{{ asset('uploads/product/sub/'.$value->SubImageUrl1)}}" alt="No Image" style="height: 200px; width: 210px; margin-left: auto; margin-right: auto;">
+                            </a>
                         </div>
                         <div style="height: 50px; width: 210px; color: #fff; background-color: #17a2b8; vertical-align: middle; text-transform: uppercase; padding-left: 5px; ">
                             <a href="{{ route('details',$value->ProductID) }}"> {{ $value->Name}} </a>
@@ -45,7 +47,7 @@
                                 </div>
                                 <div class="cart">
                                     <a href="{{ route('details',$value->ProductID) }}" data-toggle="tooltip" data-placement="left" title="For Order">
-                                        <button class="btn btn-success"><i class="fa fa-shopping-cart"> Details</i></button>
+                                        <button class="btn btn-success"><i class="fa fa-shopping-cart">Details</i></button>
                                     </a>
                                 </div>
                             </div>
